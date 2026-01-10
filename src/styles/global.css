@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "@fontsource-variable/tasa-orbiter";
+
+@theme {
+  --font-sans: "TASA Orbiter Variable", "sans-serif";
+}

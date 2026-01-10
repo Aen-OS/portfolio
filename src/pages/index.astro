@@ -1,0 +1,64 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import mew from "../../public/mew.jpg";
+---
+
+<BaseLayout>
+  <section
+    id="hero"
+    class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 xl:grid-rows-12 xl:grid-cols-12"
+  >
+    <div
+      id="title"
+      class="col-start-4 col-span-3 row-start-3 row-span-1 justify-items-center"
+    >
+      <h1 class="text-5xl">Anas Nedjai</h1>
+    </div>
+    <div
+      id="about"
+      class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col"
+    >
+      <Image
+        class="rounded-lg mb-7"
+        src={mew}
+        alt="Profile Picture"
+        width="80"
+      />
+      <div class="flex flex-row gap-30 mb-5">
+        <div class="">
+          <h3 class="text-lg">About</h3>
+        </div>
+        <div class="text-lg text-slate-500">
+          <ul>
+            <li class="">Full-Stack Developer</li>
+            <li class="">IT Support Engineer</li>
+            <li class="">Based in London</li>
+            <li class="">Open to Work</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-1 border-slate-800 mb-10 w-90"></div>
+      <div class="w-90">
+        <p class="text-base mb-10">
+          I go by AenOS on most parts of the web. <br />I like web design, CTFs,
+          and reading.<br />
+          What about <a href="" class="hover:underline">you</a>?
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    id="projects"
+    class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 xl:grid-rows-12 xl:grid-cols-12"
+  >
+    <div
+      class="col-start-4 col-span-3 row-start-3 row-span-1 justify-items-center"
+    >
+      <h2 class="text-4xl">Projects</h2>
+    </div>
+    <div class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col">
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+import astroIcon from "../../public/astro-icon.svg";
+let currentDate = new Date().getFullYear();
+---
+
+<footer
+  class="w-full h-18 border-t-slate-400 text-slate-500 text-base fixed flex gap-1 items-center justify-center"
+>
+  <span>
+    {currentDate} © Anas Nedjai - Made with Astro
+  </span><Image src={astroIcon} alt="Astro Logo" width="25" height="25" />
+</footer>
