@@ -3,6 +3,7 @@ import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import mew from "../../public/mew.jpg";
+import ProjectTab from "../components/ProjectTab.astro";
 ---
 
 <BaseLayout>
@@ -10,10 +11,7 @@ import mew from "../../public/mew.jpg";
     id="hero"
     class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 xl:grid-rows-12 xl:grid-cols-12"
   >
-    <div
-      id="title"
-      class="col-start-4 col-span-3 row-start-3 row-span-1 justify-items-center"
-    >
+    <div id="title" class="col-start-4 col-span-3 row-start-3 row-span-2">
       <h1 class="text-5xl">Anas Nedjai</h1>
     </div>
     <div
@@ -27,7 +25,7 @@ import mew from "../../public/mew.jpg";
         width="80"
       />
       <div class="flex flex-row gap-30 mb-5">
-        <div class="">
+        <div class="pl-1">
           <h3 class="text-lg">About</h3>
         </div>
         <div class="text-lg text-slate-500">
@@ -53,12 +51,13 @@ import mew from "../../public/mew.jpg";
     id="projects"
     class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 xl:grid-rows-12 xl:grid-cols-12"
   >
-    <div
-      class="col-start-4 col-span-3 row-start-3 row-span-1 justify-items-center"
-    >
+    <div class="col-start-4 col-span-2 row-start-3 row-span-1">
       <h2 class="text-4xl">Projects</h2>
     </div>
-    <div class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col">
+    <div
+      class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col border-1"
+    >
+      <ProjectTab />
     </div>
   </section>
 </BaseLayout>
