@@ -5,9 +5,13 @@ let currentDate = new Date().getFullYear();
 ---
 
 <footer
-  class="w-full h-18 border-t-slate-400 text-slate-500 text-base fixed flex gap-1 items-center justify-center"
+  class="w-full h-18 border-t-1 border-slate-800 text-slate-500 text-base flex gap-1 items-center justify-center"
 >
   <span>
-    {currentDate} © Anas Nedjai - Made with Astro
+    © {currentDate} Anas Nedjai - Credits to <a
+      class="link hover:text-slate-200 duration-300"
+      href="https://www.framer.com/marketplace/templates/ceres/"
+      >Merlin Schroter</a
+    > - Made with Astro
   </span><Image src={astroIcon} alt="Astro Logo" width="25" height="25" />
 </footer>

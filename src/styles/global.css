@@ -9,3 +9,7 @@
 /* @theme {
   --font-sans: "TASA Orbiter Variable", "sans-serif";
 } */
+
+:root {
+  scroll-behavior: smooth;
+}

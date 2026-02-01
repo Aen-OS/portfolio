@@ -15,7 +15,6 @@
 - Proficiences
 - Work/Certificates
 - Contact
-- Footer
 - Check responsive design
 - make each header sticky for when user scrolls down page
 

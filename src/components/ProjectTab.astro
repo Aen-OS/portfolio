@@ -1,7 +1,44 @@
 ---
+import { Image } from "astro:assets";
 
+const { title, description, logo, link } = Astro.props;
 ---
 
-<div class="border-1 rounded-xl">
-  <h3 class="text-lg">Project Title</h3>
+<div id="box"></div>
+
+<div class="flex flex-col gap-5">
+  <a
+    href={link}
+    class="rounded-3xl p-4 w-lg flex items-center gap-3 bg-slate-800"
+  >
+    <div id="logo" class="">
+      <Image
+        src={logo}
+        height="75"
+        alt="Bloom Academy Logo"
+        class="rounded-3xl"
+        loading="eager"
+      />
+    </div>
+    <div id="text-content" class="">
+      <h3 class="text-base">{title}</h3>
+      <p class="text-slate-500">{description}</p>
+    </div>
+  </a>
+
+  <!-- <div class="rounded-3xl p-4 w-xl flex items-center gap-5 bg-slate-800">
+    <div class="">
+      <Image
+        src={bloomIcon}
+        height="110"
+        alt="Bloom Academy Logo"
+        class="rounded-3xl"
+      />
+    </div>
+    <div>
+      <h3 class="text-lg">AN/Design</h3>
+      <p class="text-slate-500">Web design agency for small businesses</p>
+    </div>
+  </div>
+</div> -->
 </div>

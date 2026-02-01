@@ -4,6 +4,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import mew from "../../public/mew.jpg";
 import ProjectTab from "../components/ProjectTab.astro";
+import Calendar from "@lucide/astro/icons/calendar";
+import MapPin from "@lucide/astro/icons/map-pin";
+import ArrowRight from "@lucide/astro/icons/arrow-right";
+import bloomIcon from "../../public/bloomacademyICON.svg";
 ---
 
 <BaseLayout>
@@ -21,8 +25,9 @@ import ProjectTab from "../components/ProjectTab.astro";
       <Image
         class="rounded-lg mb-7"
         src={mew}
-        alt="Profile Picture"
+        alt="spotlight"
         width="80"
+        loading="eager"
       />
       <div class="flex flex-row gap-30 mb-5">
         <div class="pl-1">
@@ -42,7 +47,7 @@ import ProjectTab from "../components/ProjectTab.astro";
         <p class="text-base mb-10">
           I go by AenOS on most parts of the web. <br />I like web design, CTFs,
           and reading.<br />
-          What about <a href="" class="hover:underline">you</a>?
+          What about <a href="#contact" class="hover:underline">you</a>?
         </p>
       </div>
     </div>
@@ -54,10 +59,143 @@ import ProjectTab from "../components/ProjectTab.astro";
     <div class="col-start-4 col-span-2 row-start-3 row-span-1">
       <h2 class="text-4xl">Projects</h2>
     </div>
+    <div class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col">
+      <ProjectTab
+        title="Bloom Academy"
+        description="English tuition for students and adults"
+        logo={bloomIcon}
+        link="bloomacademy.uk"
+      />
+    </div>
+  </section>
+  <section
+    id="skills"
+    class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 xl:grid-rows-12 xl:grid-cols-12"
+  >
+    <div class="col-start-4 col-span-2 row-start-3 row-span-1">
+      <h2 class="text-4xl">Skills</h2>
+    </div>
+    <div class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col">
+      <div class="flex flex-row gap-50 mb-5">
+        <div class="pl-1">
+          <h3 class="text-lg">Skills</h3>
+        </div>
+        <div class="text-lg text-slate-500">
+          <ul>
+            <li class="">Frontend Architecture</li>
+            <li class="">UX & Layout</li>
+            <li class="">Responsive Design</li>
+            <li class="">API integration</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-1 border-slate-800 mb-5 w-110"></div>
+      <div class="flex flex-row gap-50 mb-5">
+        <div class="pl-1">
+          <h3 class="text-lg">Tools</h3>
+        </div>
+        <div class="text-lg text-slate-500">
+          <ul>
+            <li class="">VS Code</li>
+            <li class="">Figma</li>
+            <li class="">Gimp/Affinity</li>
+            <li class="">Claude</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-1 border-slate-800 mb-5 w-110"></div>
+      <div class="flex flex-row gap-38 mb-5">
+        <div class="pl-1">
+          <h3 class="text-lg">Tech Stack</h3>
+        </div>
+        <div class="text-lg text-slate-500">
+          <ul>
+            <li class="">Next.js/Astro</li>
+            <li class="">React</li>
+            <li class="">Tailwind</li>
+            <li class="">Javascript</li>
+            <li class="">SQL</li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="border-1 border-slate-800 mb-5 w-90"></div>
+      <div class="flex flex-row gap-30 mb-5">
+        <div class="pl-1">
+        <h3 class="text-lg">Spoken Languages</h3>
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <section
+    id="work"
+    class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 xl:grid-rows-12 xl:grid-cols-12"
+  >
+    <div class="col-start-4 col-span-2 row-start-3 row-span-1">
+      <h2 class="text-4xl">Work</h2>
+    </div>
+    <div class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col">
+      <h3 class="text-lg mb-1">Interface-Studio/PixelnFlow</h3>
+      <div class="text-sm text-slate-500 flex flex-row gap-5 mb-1 items-center">
+        <div class="flex flex-row gap-2 items-center">
+          <p><Calendar /></p>
+          <p>2023 - Present</p>
+        </div>
+        <div class="flex flex-row gap-2 items-center">
+          <p><MapPin /></p>
+          <p>London</p>
+        </div>
+      </div>
+      <p class="mb-5 text-slate-500">
+        Building my own web design business & working on my own projects.
+        Started with a udemy course, and I've learned all sorts of stuff along
+        the way.
+      </p>
+      <div class="border-1 border-slate-800 mb-5 w-90"></div>
+      <h3 class="text-lg mb-1">Darktrace</h3>
+      <div class="text-sm text-slate-500 flex flex-row gap-5 mb-1 items-center">
+        <div class="flex flex-row gap-2 items-center">
+          <p><Calendar /></p>
+          <p>2022-2023</p>
+        </div>
+        <div class="flex flex-row gap-2 items-center">
+          <p><MapPin /></p>
+          <p>London</p>
+        </div>
+      </div>
+      <p class="max-w-sm text-slate-500">
+        Provided first line IT Support, gaining familiarity with IT networks,
+        device management software, and troubleshooting.
+      </p>
+    </div>
+  </section>
+  <section
+    id="contact"
+    class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 xl:grid-rows-12 xl:grid-cols-12"
+  >
+    <div class="col-start-4 col-span-2 row-start-3 row-span-1">
+      <h2 class="text-4xl">Contact</h2>
+    </div>
     <div
-      class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col border-1"
+      class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col text-slate-500"
     >
-      <ProjectTab />
+      <a href="mailto:anedjai0@gmail.com"
+        ><button
+          class="px-2 py-1 rounded-xl hover:bg-slate-800 duration-300 flex flex-row items-center gap-2"
+          >Email <ArrowRight size="16" /></button
+        ></a
+      >
+      <a href="github.com/Aen-OS"
+        ><button
+          class="px-2 py-1 rounded-xl hover:bg-slate-800 duration-300 flex flex-row items-center gap-2"
+          >Github <ArrowRight size="16" /></button
+        ></a
+      >
+      <a href="linkedin.com/in/anas-nedjai120"
+        ><button
+          class="px-2 py-1 rounded-xl hover:bg-slate-800 duration-300 flex flex-row items-center gap-2"
+          >LinkedIn <ArrowRight size="16" /></button
+        ></a
+      >
     </div>
   </section>
 </BaseLayout>
