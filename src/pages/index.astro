@@ -8,6 +8,8 @@ import Calendar from "@lucide/astro/icons/calendar";
 import MapPin from "@lucide/astro/icons/map-pin";
 import ArrowRight from "@lucide/astro/icons/arrow-right";
 import bloomIcon from "../../public/bloomacademyICON.svg";
+import andesign from "../../public/andesignlogo.png";
+import charityworld from "../../public/charityworld.png";
 ---
 
 <BaseLayout>
@@ -59,12 +61,29 @@ import bloomIcon from "../../public/bloomacademyICON.svg";
     <div class="col-start-4 col-span-2 row-start-3 row-span-1">
       <h2 class="text-4xl">Projects</h2>
     </div>
-    <div class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col">
+    <div
+      class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col gap-5"
+    >
+      <ProjectTab
+        title="CharityWorld"
+        description="Explore a new way of giving Charity"
+        logo={charityworld}
+        link="#"
+        loading="eager"
+      />
       <ProjectTab
         title="Bloom Academy"
         description="English tuition for students and adults"
         logo={bloomIcon}
-        link="bloomacademy.uk"
+        link="https://www.bloomacademy.uk"
+        loading="lazy"
+      />
+      <ProjectTab
+        title="AN/Design"
+        description="My own web design agency website"
+        logo={andesign}
+        link="https://www.andesign.netlify.app"
+        loading="lazy"
       />
     </div>
   </section>
@@ -133,7 +152,9 @@ import bloomIcon from "../../public/bloomacademyICON.svg";
     <div class="col-start-4 col-span-2 row-start-3 row-span-1">
       <h2 class="text-4xl">Work</h2>
     </div>
-    <div class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col">
+    <div
+      class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col ml-2"
+    >
       <h3 class="text-lg mb-1">Interface-Studio/PixelnFlow</h3>
       <div class="text-sm text-slate-500 flex flex-row gap-5 mb-1 items-center">
         <div class="flex flex-row gap-2 items-center">
@@ -150,7 +171,7 @@ import bloomIcon from "../../public/bloomacademyICON.svg";
         Started with a udemy course, and I've learned all sorts of stuff along
         the way.
       </p>
-      <div class="border-1 border-slate-800 mb-5 w-90"></div>
+      <div class="border-1 border-slate-800 mb-5 w-110"></div>
       <h3 class="text-lg mb-1">Darktrace</h3>
       <div class="text-sm text-slate-500 flex flex-row gap-5 mb-1 items-center">
         <div class="flex flex-row gap-2 items-center">
@@ -176,23 +197,23 @@ import bloomIcon from "../../public/bloomacademyICON.svg";
       <h2 class="text-4xl">Contact</h2>
     </div>
     <div
-      class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col text-slate-500"
+      class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col text-slate-500 gap-1"
     >
       <a href="mailto:anedjai0@gmail.com"
         ><button
-          class="px-2 py-1 rounded-xl hover:bg-slate-800 duration-300 flex flex-row items-center gap-2"
+          class="px-2 py-1 rounded-xl hover:bg-slate-800 duration-300 flex flex-row items-center gap-2 cursor-pointer"
           >Email <ArrowRight size="16" /></button
         ></a
       >
-      <a href="github.com/Aen-OS"
+      <a href="https://wwwgithub.com/Aen-OS"
         ><button
-          class="px-2 py-1 rounded-xl hover:bg-slate-800 duration-300 flex flex-row items-center gap-2"
+          class="px-2 py-1 rounded-xl hover:bg-slate-800 duration-300 flex flex-row items-center gap-2 cursor-pointer"
           >Github <ArrowRight size="16" /></button
         ></a
       >
-      <a href="linkedin.com/in/anas-nedjai120"
+      <a href="https://www.linkedin.com/in/anas-nedjai120"
         ><button
-          class="px-2 py-1 rounded-xl hover:bg-slate-800 duration-300 flex flex-row items-center gap-2"
+          class="px-2 py-1 rounded-xl hover:bg-slate-800 duration-300 flex flex-row items-center gap-2 cursor-pointer"
           >LinkedIn <ArrowRight size="16" /></button
         ></a
       >

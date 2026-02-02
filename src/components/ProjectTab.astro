@@ -1,44 +1,35 @@
 ---
 import { Image } from "astro:assets";
+import ArrowRight from "@lucide/astro/icons/arrow-right";
 
-const { title, description, logo, link } = Astro.props;
+const { title, description, logo, link, loading } = Astro.props;
 ---
 
-<div id="box"></div>
-
-<div class="flex flex-col gap-5">
+<div class="project-tab flex flex-col gap-5 relative">
   <a
     href={link}
-    class="rounded-3xl p-4 w-lg flex items-center gap-3 bg-slate-800"
+    class="rounded-3xl p-4 w-lg flex items-center gap-3 bg-slate-800 relative overflow-hidden"
   >
-    <div id="logo" class="">
+    <div
+      class="viewPill p-3 bg-slate-900 text-slate-200 flex gap-5 items-center rounded-lg pl-5 w-28 h-16"
+    >
+      <p>View</p>
+      <p><ArrowRight /></p>
+    </div>
+    <div class="logo">
       <Image
         src={logo}
         height="75"
         alt="Bloom Academy Logo"
         class="rounded-3xl"
-        loading="eager"
+        loading={loading}
       />
     </div>
-    <div id="text-content" class="">
+    <div class="text-content">
       <h3 class="text-base">{title}</h3>
       <p class="text-slate-500">{description}</p>
     </div>
   </a>
-
-  <!-- <div class="rounded-3xl p-4 w-xl flex items-center gap-5 bg-slate-800">
-    <div class="">
-      <Image
-        src={bloomIcon}
-        height="110"
-        alt="Bloom Academy Logo"
-        class="rounded-3xl"
-      />
-    </div>
-    <div>
-      <h3 class="text-lg">AN/Design</h3>
-      <p class="text-slate-500">Web design agency for small businesses</p>
-    </div>
-  </div>
-</div> -->
 </div>
+
+<script src="../scripts/projectTabs.js"></script>
