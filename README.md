@@ -10,12 +10,12 @@
 
 ## To Do:
 
-- Hero (About + image)
-- Projects
-- Proficiences
-- Work/Certificates
-- Contact
 - Check responsive design
+  - About
+  - Proficiencies
+  - Projects
+  - Work
+  - Contact
 - make each header sticky for when user scrolls down page
 
 ## Next Steps:

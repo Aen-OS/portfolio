@@ -6,17 +6,23 @@ let currentDate = new Date().getFullYear();
 ---
 
 <footer
-  class="w-full h-18 border-t-1 border-slate-800 text-slate-500 text-base flex gap-1 items-center justify-center"
+  class="w-full h-18 border-t-1 border-slate-800 text-slate-500 text-base flex flex-col md:flex-row items-center justify-center"
 >
-  <span>
-    © {currentDate} Anas Nedjai - Credits to <a
-      class="hover:text-slate-200 duration-300"
-      href="https://www.framer.com/marketplace/templates/ceres/"
-      >Merlin Schroter</a
-    > - Made with
-  </span><div class="flex flex-row gap-1">
-    <Image src={astroIcon} alt="Astro Logo" height="25" />
+  <span class="text-center md:text-left flex flex-col md:flex-row">
+    <p>© {currentDate} Anas Nedjai</p><span class="hidden md:flex"
+      >&nbsp;|&nbsp;
+    </span>
+    <p class="pl-3 md:p-0">
+      Credits to <a
+        class="hover:text-slate-200 duration-300"
+        href="https://www.framer.com/marketplace/templates/ceres/"
+        >Merlin Schroter</a
+      >
+    </p><span class="hidden md:inline">&nbsp;|&nbsp;</span>
+  </span><div class="hidden md:flex flex-row gap-1 items-center">
+    Made with
+    <Image src={astroIcon} alt="Astro Logo" class="h-[25px] p-0 m-0 max-w-7" />
     <span> &&NonBreakingSpace; </span>
-    <Image src={gsapIcon} alt="GSAP Logo" height="15" width="65" />
+    <Image src={gsapIcon} alt="GSAP Logo" class="h-[20px] w-[65px]" />
   </div>
 </footer>

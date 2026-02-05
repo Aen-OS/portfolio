@@ -3,13 +3,15 @@ import Menu from "@lucide/astro/icons/menu";
 ---
 
 <header
-  class="headerbar fixed top-0 left-0 z-50 h-12 w-full bg-slate-950 flex items-center justify-around font-sans text-lg text-slate-500 border-b border-slate-800"
+  class="headerbar fixed top-0 left-0 z-50 h-12 w-full bg-slate-950 flex items-center justify-around font-sans text-slate-500 border-b border-slate-800"
 >
-  <div class="flex hover:text-slate-200 duration-300 text-xl">
+  <div
+    class="flex hover:text-slate-200 duration-300 text-base md:text-lg lg:text-xl"
+  >
     <a href="#contact"><span>Anas Nedjai</span></a>
   </div>
   <button
-    class="menubtn text-xl hover:bg-slate-500 duration-300 py-1 px-2 rounded-lg hover:text-slate-800 flex flex-row gap-1 items-center"
+    class="menubtn text-base md:text-lg lg:text-xl hover:bg-slate-500 duration-300 py-1 px-2 rounded-lg hover:text-slate-800 flex flex-row gap-1 items-center"
     type="button"
     aria-expanded="false"
     aria-controls="navOverlay"
@@ -23,23 +25,28 @@ import Menu from "@lucide/astro/icons/menu";
   id="navOverlay"
   class="navOverlay fixed left-0 top-0 z-40 w-full bg-slate-950 border-b border-slate-800"
 >
-  <div class="mx-auto max-w-5xl pt-20 pb-10 flex justify-end">
-    <ul class="navItems text-slate-200 text-xl flex flex-col gap-6 text-right">
+  <div
+    class="mx-auto max-w-sm lg:max-w-xl xl:max-w-5xl pt-20 pb-10 flex justify-end"
+  >
+    <ul
+      class="navItems text-slate-500 text-base md:text-lg xl:text-xl flex flex-col gap-6 text-right"
+    >
       <li class="navItem">
-        <a href="#work" class="hover:text-white duration-200">Work</a>
+        <a href="#work" class="hover:text-slate-200 duration-200">Work</a>
       </li>
       <li class="navItem">
-        <a href="#hero" class="hover:text-white duration-200">About</a>
+        <a href="#hero" class="hover:text-slate-200 duration-200">About</a>
       </li>
       <li class="navItem">
-        <a href="#skills" class="hover:text-white duration-200">Proficiencies</a
+        <a href="#skills" class="hover:text-slate-200 duration-200"
+          >Proficiencies</a
         >
       </li>
       <li class="navItem">
-        <a href="#contact" class="hover:text-white duration-200">Contact</a>
+        <a href="#contact" class="hover:text-slate-200 duration-200">Contact</a>
       </li>
       <li class="navItem">
-        <a href="#hero" class="hover:text-white duration-200">Back Home</a>
+        <a href="#hero" class="hover:text-slate-200 duration-200">Back Home</a>
       </li>
     </ul>
   </div>
