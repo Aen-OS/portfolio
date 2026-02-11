@@ -11,11 +11,11 @@
 ## To Do:
 
 - Check responsive design
-  - About
-  - Proficiencies
-  - Projects
-  - Work
-  - Contact
+  - About tablet
+  - Proficiencies mobile, tablet
+  - Projects mobile, tablet
+  - Work mobile, tablet
+  - Contact mobile, tablet
 - make each header sticky for when user scrolls down page
 
 ## Next Steps:

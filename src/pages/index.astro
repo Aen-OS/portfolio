@@ -13,19 +13,22 @@ import charityworld from "../../public/charityworld.png";
 ---
 
 <BaseLayout>
-  <!-- <section
+  <section
     id="hero"
-    class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 xl:grid-rows-12 xl:grid-cols-12"
+    class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 lg:grid-rows-12 lg:grid-cols-12"
   >
-    <div id="title" class="col-start-4 col-span-3 row-start-3 row-span-2">
-      <h1 class="text-5xl">Anas Nedjai</h1>
+    <div
+      id="title"
+      class="col-start-1 col-span-4 row-start-1 row-span-1 flex items-center justify-center md:justify-start mt-20 md:mt-0 md:col-start-2 md:col-span-2 md:row-start-2 lg:col-start-3 lg:col-span-4 xl:col-start-4 xl:col-span-3 lg:row-start-3 lg:row-span-2"
+    >
+      <h1 class="text-6xl md:text-left md:text-5xl">Anas Nedjai</h1>
     </div>
     <div
       id="about"
-      class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col"
+      class="col-start-1 col-span-4 row-start-2 row-span-3 mt-10 mx-auto md:ml-0 md:mt-0 md:col-start-4 md:col-span-4 md:row-start lg:col-start-7 lg:col-span-3 lg:row-start-3 lg:row-span-8 flex flex-col"
     >
       <Image
-        class="rounded-lg mb-7"
+        class="rounded-lg mb-7 hidden md:flex"
         src={mew}
         alt="spotlight"
         width="80"
@@ -53,46 +56,15 @@ import charityworld from "../../public/charityworld.png";
         </p>
       </div>
     </div>
-  </section> -->
-  <!-- <section
-    id="projects"
-    class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 xl:grid-rows-12 xl:grid-cols-12"
-  >
-    <div class="col-start-4 col-span-2 row-start-3 row-span-1">
-      <h2 class="text-4xl">Projects</h2>
-    </div>
-    <div
-      class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col gap-5"
-    >
-      <ProjectTab
-        title="CharityWorld (Coming Soon)"
-        description="Explore a new way of giving Charity"
-        logo={charityworld}
-        link="#"
-        loading="eager"
-      />
-      <ProjectTab
-        title="Bloom Academy"
-        description="English tuition for students and adults"
-        logo={bloomIcon}
-        link="https://www.bloomacademy.uk"
-        loading="eager"
-      />
-      <ProjectTab
-        title="AN/Design"
-        description="My own web design agency website"
-        logo={andesign}
-        link="https://www.andesign.netlify.app"
-        loading="lazy"
-      />
-    </div>
-  </section> -->
+  </section>
   <!-- <section
     id="skills"
     class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 xl:grid-rows-12 xl:grid-cols-12"
   >
-    <div class="col-start-4 col-span-2 row-start-3 row-span-1">
-      <h2 class="text-4xl">Skills</h2>
+    <div
+      class="col-start-1 col-span-2 ml-5 lg:col-start-4 lg:col-span-2 lg:row-start-3 lg:row-span-1"
+    >
+      <h2 class="text-4xl">Proficiencies</h2>
     </div>
     <div class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col">
       <div class="flex flex-row gap-50 mb-5">
@@ -143,6 +115,39 @@ import charityworld from "../../public/charityworld.png";
           <h3 class="text-lg">Spoken Languages</h3>
         </div>
       </div>
+    </div>
+  </section> -->
+  <!-- <section
+    id="projects"
+    class="w-full grid grid-rows-4 grid-cols-4 md:grid-rows-8 md:grid-cols-8 xl:grid-rows-12 xl:grid-cols-12"
+  >
+    <div class="col-start-4 col-span-2 row-start-3 row-span-1">
+      <h2 class="text-4xl">Projects</h2>
+    </div>
+    <div
+      class="col-start-7 col-span-3 row-start-3 row-span-8 flex flex-col gap-5"
+    >
+      <ProjectTab
+        title="CharityWorld (Coming Soon)"
+        description="Explore a new way of giving Charity"
+        logo={charityworld}
+        link="#"
+        loading="eager"
+      />
+      <ProjectTab
+        title="Bloom Academy"
+        description="English tuition for students and adults"
+        logo={bloomIcon}
+        link="https://www.bloomacademy.uk"
+        loading="eager"
+      />
+      <ProjectTab
+        title="AN/Design"
+        description="My own web design agency website"
+        logo={andesign}
+        link="https://www.andesign.netlify.app"
+        loading="lazy"
+      />
     </div>
   </section> -->
   <!-- <section
