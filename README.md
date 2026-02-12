@@ -11,7 +11,6 @@
 ## To Do:
 
 - Check responsive design
-  - About tablet
   - Proficiencies mobile, tablet
   - Projects mobile, tablet
   - Work mobile, tablet
